@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TimeTrace Today Analytics</title>
+    <link rel="stylesheet" href="today.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="dashboard-header">
+        <div>
+          <p class="eyebrow">TimeTrace</p>
+          <h2>Today's Analytics</h2>
+        </div>
+      </header>
+
+      <section class="stats-grid">
+        <article class="card">
+          <span class="card-label">Total Screen Time</span>
+          <strong id="total-time">Loading...</strong>
+        </article>
+
+        <article class="card ps-card">
+          <span class="card-label">Productivity Score</span>
+          <div class="score-box">
+            <strong id="productivity-score">--</strong>
+          </div>
+        </article>
+      </section>
+      
+      <section class="chart-card">
+        <div class="chart-header">
+          <div>
+            <span>Website Usage Chart</span>
+            <p>Today's tracked time by website.</p>
+          </div>
+        </div>
+        <canvas id="usageChart"></canvas>
+      </section>
+
+      <section class="card websites-card">
+        <span class="card-label">Websites Used Today</span>
+        <ul id="website-list" class="top-list">
+          <li>Loading...</li>
+        </ul>
+      </section>
+
+
+      <section class="stats-grid small-grid">
+        <article class="p-card card">
+          <span class="card-label">Productive Time</span>
+          <strong id="productive-time">0m</strong>
+        </article>
+        <article class="n-card card">
+          <span class="card-label">Neutral Time</span>
+          <strong id="neutral-time">0m</strong>
+        </article>
+        <article class="d-card card">
+          <span class="card-label">Distracting Time</span>
+          <strong id="distracting-time">0m</strong>
+        </article>
+      </section>
+    </div>
+
+    <script src="libs/chart.umd.js"></script>
+    <script src="shared.js"></script>
+    <script src="today.js"></script>
+  </body>
+</html>

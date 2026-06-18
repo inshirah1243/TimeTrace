@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TimeTrace</title>
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="dashboard-header">
+        <div>
+          <p class="eyebrow">TimeTrace </p>
+          <h3>Website Activity & Productivity Tracker</h3>
+        </div>
+      </header>
+
+      <section class="stats-grid">
+        <article class="card today-card" id="today-card">
+          <span class="card-label">Today</span>
+          <strong id="total-time">Loading...</strong>
+        </article>
+
+        <article class="card">
+          <span class="card-label">Websites visited</span>
+          <strong id="site-count">0</strong>
+        </article>
+
+        <article class="card">
+          <span class="card-label">Today's Insights</span>
+          <div class="insights-content">
+            <div class="insight-section">
+              <span class="insight-label">Most Used Website</span>
+              <div id="most-used-site" class="insight-value">--</div>
+            </div>
+            <div class="insight-section">
+              <span class="insight-label">Focus Score</span>
+              <div class="score-box">
+                <strong id="productivity-score">--</strong>
+              </div>
+            </div>
+            <div class="insight-section">
+              <span class="insight-label"> </span>
+              <h2 id="productivity-message" class="card-note"></h2>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <span class="card-label">Daily Average Usage</span>
+            <strong id="daily-average">
+              Loading...
+            </strong>
+            <p id="tracked-days" class="card-note">
+            Calculating...
+            </p>
+            <div class="avg-score-section">
+              <span class="insight-label">Average Focus Score</span>
+                  <strong id="average-score">-- / 100</strong>
+            </div>
+        </article>
+      </section>
+      <section class="chart-card">
+        <div class="chart-header">
+          <div>
+            <span>Frequently Used Websites</span>
+            <p class="chart-subtitle">
+              Your most visited websites across all tracked days
+            </p>
+          </div>
+        </div>
+        <canvas id="usageChart"></canvas>
+      </section>
+    </div>
+
+    <script src="libs/chart.umd.js"></script>
+    <script src="shared.js"></script>
+    <script src="dashboard.js"></script>
+  </body>
+</html>
