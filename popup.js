@@ -101,9 +101,7 @@ function renderPopup(usage) {
 function renderTopSites(usage) {
   const container =
     document.getElementById("top-sites");
-
   container.innerHTML = "";
-
   const sortedSites =
     Object.entries(usage)
       .sort((a, b) => b[1] - a[1])

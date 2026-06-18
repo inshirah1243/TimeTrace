@@ -16,6 +16,16 @@ body {
   padding: 18px;
 }
 
+.brand {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #4b4f61;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+
 .hero-card {
   background: rgba(255, 255, 255, 0.86);
   border: 1px solid rgba(255, 255, 255, 0.78);
@@ -67,14 +77,8 @@ body {
   display: flex;
   cursor: pointer;
 }
-.brand {
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: #4b4f61;
-  margin-bottom: 10px;
-}
+
+
 
 .focus-card {
   background: rgba(255, 255, 255, 0.86);
